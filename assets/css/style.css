@@ -1,0 +1,289 @@
+body{
+    font-family: 'Cairo', sans-serif;
+
+}
+/* start header => navbar /////*/
+nav .nav{float: left;}
+nav .p-4   
+{
+    overflow: hidden;
+    background-color: #d6d6d6 !important;
+}
+nav .pos-f-t{background-color: #d6d6d6 !important;}
+.navbar-light .navbar-toggler-icon
+ {
+   font-size: 30px;
+   color:#3AADE6;
+    background: none;
+    border-width:0;
+}
+.navbar-light .navbar-toggler {border-width: 0;}
+.nav-logo{
+    width: 135px;
+    height: 55px;
+    color: #3AADE6;
+}
+header .top-page{
+    background: #2D3E50;
+    color:#fff;
+    padding: 10px 0px;
+    font-size: 0.9em;
+ }
+ header .top-page .span-email{float: left;}
+ header .top-page .div-icon{float: left;}
+ header .top-page .div-icon span{padding: 0 3px;}
+ header .top-page .div-lang{float: right;}
+ nav ul{direction: rtl;color:rgba(0,0,0,.5);}
+ nav{ background: #F9F9F9;}
+ nav ul li:nth-of-type(7){
+     padding-right: 80px;
+     text-decoration: underline;
+     padding-bottom: 3px;
+     color:rgb(38, 91, 148) 
+ }
+ nav ul li button{
+     background:#2D3E50 ;
+     border-radius: 10px;
+     border: none;
+     color: #fff;
+     border-radius: 6px;
+     padding: 10px;
+ }
+ nav ul li button a { padding: 6px 25px;color: #fff;}
+ nav ul li button a:hover{color:red;text-decoration: none;}
+/* end header => navbar////////////// */
+/* start header => slider */
+.slider-boot img {height: 400px;}
+
+/* end header => slider ///////////////////////*/
+/* start section articls */
+.articls .card-title ,.articls h2, h2{color:#b91f1f}
+.articls.card{margin: 1px;}
+.articls{
+    padding: 52px 0px;
+    background: url("../img/subtle-pattern-1.jpg")no-repeat center center;
+      background-size: cover;
+}
+.articls .next ,.articls .prev{
+    opacity: .5;
+    padding: 3px;
+    font-size: 20px;} 
+    .articls .bu-style
+    {
+        text-align: center;
+        margin: auto;
+        display: list-item;
+        padding: 6px;
+    }
+/* end section articls/////////////////////// */
+/* start section aboud me */
+.img-aboud{height: 300px; border-radius: 14%; width: 300px;}
+.about-me .icon .fa:hover{color:rgb(179, 12, 12)}
+.about-me .icon .fa{padding: 5px 15px;font-size: 28px;color: #fff;}
+   .about-me{
+    text-align: center;
+    background: url(../image/background\(3\).jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #eee;
+   }
+.about-me p{ margin-bottom: 0; line-height: 2;}
+   .background-fig{
+    background: rgba(0, 0, 1, 0.6);
+    width: 100%;
+    line-height: 1.7;
+    font-size: 18px;
+       }
+   .about-me h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #d1c8eb;
+   }
+   /* end section aboud me */
+/* start section about */
+
+.slick-slider .slick-track, .slick-slider .slick-list{ width: 100%;}
+/* start blood-donation */
+/* end blood-donation */
+.bu-style{
+    background: #2D3E50;
+    border: none;
+    color: #fff;
+    padding: 2px;
+    width: 130px;
+}
+/* end blood type */
+/* start footer  */
+footer{background-color: #123;color: #fff;line-height: 2;}
+ footer .footer-end {padding: 10px 0px;color:#fff;direction: rtl;}
+footer .footer-end .icon , .icon{padding: 20px;}
+footer  .icon .fa{padding: 5px;}
+/* buttom //////////////////////////////////////////////////////////////////*/
+.body-home{
+    background: url("../image/backround(1).jpg") no-repeat center center fixed;
+    background-size: cover;
+    direction: rtl;
+    color:#eee  
+}
+.body-home .background-section{
+    background:rgba(37, 27, 65, 0.39);
+    width: 100%;
+     display: inline-block;
+    min-height: 600px;
+    padding: 10px 0px;
+} 
+.body-home .background-section .relativ{position:relative}
+/* start comments */
+.body-home .background-section .comment{
+    border: 1px solid #ddd;
+    width: 100%;
+    min-height: 100px;
+    background: #dddddd73;
+    color: #222;
+    border-radius: 15px;
+}
+.body-home .background-section .comment .text-comment{ padding: 5px}
+.body-home .background-section .comment input[type=text]{
+    width: 78%;
+    height: 40px;
+    border-radius: 0 10px 0 0;
+    border: none;
+    padding-right: 10px;
+    background: #fff;
+    font-weight: bolder;
+}
+.body-home .background-section .comment input[type=submit]{
+    width: 20%;
+    height: 40px;
+    border: none;
+    background: #452f86ad;
+    cursor: pointer;
+}
+.body-home .background-section .comment  .div-result{text-align: center;font-size: 20px;cursor: pointer;}
+.body-home .background-section .comment  .div-result .number-viwe{
+    float: right;
+    padding-right: 20px;
+     cursor: pointer;
+} 
+.body-home .background-section .comment  .div-result   .number-likes{
+    float: left;
+    padding-left: 20px;
+     cursor: pointer;
+}
+/* end comments ///////////////////////////////////*/
+.nav-fixed{ position: fixed; width: 100%;}
+.icon-top{
+    font-size: 25px;
+    color: #Fff;
+    background: none;
+    border-radius: 50%;
+    display: block;
+    z-index: 50;
+    position: fixed;
+    bottom: 28px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+/* //////////////////////////////////////////////////////////////////// */
+/* start page sound */
+.video{width: 100%;padding: 10px;border-radius: 50px;    }
+.ad-v {
+    text-align: center;
+    margin: 0 10px;
+    border: 2px solid #797979;
+    border-radius: 15px ;
+    padding: 5px;
+    background: rgba(1,3,10,.9);
+    /* max-height: 80px; */
+    overflow: auto;
+    line-height: 1.4;
+}
+.he-div {height: 300px;}
+.ulvs {
+
+    list-style: none;
+    display: block;
+    position: absolute;
+    font-size: 17px;
+    border: 2px solid #666565;
+    background: rgba(1,1,1,.4);
+    border-radius: none;
+    padding-right: 0px;
+}
+.ulvs li{
+    float: right;
+    padding: 5px;;
+    border-radius: none;
+    padding: 5px 20px;
+    border-radius: 0;
+}
+.activ{background: #331068;border-radius: none;}
+audio {width: 100%;height: 58px;;padding: 0px 20px;}
+.he-sound{height: 140px;}
+/* end page sound */
+    /* start style page article */
+.article-page .card-body
+{
+    text-align: center;
+    color: #123;
+    opacity: .8;
+    font-size: 20px;
+}
+    /* end style page articl */
+/* start style page pomes */
+.poems-page .card-body {
+        color: #444;
+        line-height: 2;
+        font-size: 20px;
+        direction: rtl;
+        text-align: right;
+}
+.poems-page  .card-body  h5{text-align: center;}
+.poems-page  .card{margin: 10px 0;}
+.poems-page .comment{ text-align: right; }
+.poems{
+      background: url("../image/BG-phone.png")no-repeat center center;
+      background-size: cover;
+      padding: 25px 0px;
+    }
+.poems .card-body{text-align: center;line-height: 2;}
+.poems .item{ padding: 3px; }
+.poems .icon{ text-align: center; }
+    .poems .icon .fa{  padding: 10px; }
+    
+    /* end style page pomes */
+    /* start style loading */
+.spinner { margin: 100px auto 0; width: 70px; text-align: center; }
+.spinner > div { 
+    width: 18px;
+     height: 18px;
+     background-color: #fff;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+      }
+      .spinner .bounce1 { -webkit-animation-delay: -0.32s; animation-delay: -0.32s }
+      .spinner .bounce2 {-webkit-animation-delay: -0.16s;   animation-delay: -0.16s; }
+      @-webkit-keyframes sk-bouncedelay {
+        0%, 80%, 100% { -webkit-transform: scale(0) }
+        40% { -webkit-transform: scale(1.0) }
+      }
+      @keyframes sk-bouncedelay {
+        0%, 80%, 100% { 
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        } 40% { 
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+        }
+      }
+    .loading{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #3AADE6;  
+        top: 0;
+        z-index: 333;
+        right: 0;}
+            /* end style loading//////////// */
