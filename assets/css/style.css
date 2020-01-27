@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
 body{
     font-family: 'Cairo', sans-serif;
 
@@ -7,10 +14,19 @@ a {
 
 }
 
-.card {
+/* .card {
     margin: 0px 15px
+} */
+/* start  => navbar /////*/
+.carousel-caption {
+    background: rgba(16, 16, 54, 0.28);
+    border-radius: 20px;
+    padding: 5px;
 }
-/* start header => navbar /////*/
+#header {
+overflow: auto;
+min-height: 90%;
+}
 nav .nav{float: left;}
 nav .p-4   
 {
@@ -18,6 +34,11 @@ nav .p-4
     background-color: #d6d6d6 !important;
 }
 nav .pos-f-t{background-color: #d6d6d6 !important;}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #eee;
+    transform: translateX(-10px);
+    transition: 1.5s;
+}
 .navbar-light .navbar-toggler-icon
  {
    font-size: 45px;
@@ -85,7 +106,7 @@ header .top-page{
 
 /* end header => slider ///////////////////////*/
 /* start section articls */
-.articls .card-title ,.articls h2, h2{color:#b91f1f}
+.articls .card-title ,.articls h2,.article-page h5, h2{color:#b91f1f}
 .articls.card{margin: 1px;}
 .articls .card .card-text{
     max-height: 8em;
@@ -106,30 +127,48 @@ header .top-page{
         margin: auto;
         display: list-item;
         padding: 6px;
+        cursor: pointer;
     }
 /* end section articls/////////////////////// */
 /* start section aboud me */
-.img-aboud{height: 300px; border-radius: 14%; width: 300px;}
-.about-me .icon .fa:hover{color:rgb(179, 12, 12)}
-.about-me .icon .fa{padding: 5px 15px;font-size: 28px;color: #fff;}
-   .about-me{
-    text-align: center;
-    background: url(../image/background\(3\).jpg) no-repeat center center fixed;
-    background-size: cover;
-    color: #eee;
-   }
-.about-me p{ margin-bottom: 0; line-height: 2;}
+.about-me .about-main{
+        background: #ccc;
+        width: 80%;
+        margin: 30px auto;
+        border-radius: 20px;
+}
+.img-aboud{  
+      border-radius: 0px 10px 10px 0px;
+      height: 300px;
+      width: 100%;
+    }
+.about-me .icon .fa:hover{color:#001e3c ;}
+.about-me .icon .fa{padding: 5px 15px;font-size: 28px;color: #414142;}
+
+.about-me p{ margin-bottom: 0; line-height: 2.5;
+    font-weight: bolder;
+    color: #444;
+}
+@media (max-width:480px){
+    .about-me .about-main
+    {
+        width: 100%;
+
+    }
+      }
+@media (max-width:985px){
+    .img-aboud
+    {
+        border-radius: 10px 10px 0px 0px;
+    }
+      }
    .background-fig{
     background: rgba(0, 0, 1, 0.6);
     width: 100%;
     line-height: 1.7;
     font-size: 18px;
        }
-   .about-me h3{
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: #d1c8eb;
-   }
+
    /* end section aboud me */
 /* start section about */
 
@@ -137,15 +176,21 @@ header .top-page{
 /* start blood-donation */
 /* end blood-donation */
 .bu-style{
-    background: #2D3E50;
+    background: #34315a;
     border: none;
+    box-shadow: 1px 3px 20px 0px #000;
     color: #fff;
     padding: 2px;
-    width: 130px;
+    border-radius: 20px;
+    width: 140px;
 }
 /* end blood type */
 /* start footer  */
-footer{background-color: #123;color: #fff;line-height: 2;}
+#footer{
+    clear: both;
+}
+
+footer{background-color: #123;color: #fff;line-height: 2; }
  footer .footer-end {padding: 10px 0px;color:#fff;direction: rtl;}
 footer .footer-end .icon , .icon{padding: 20px;}
 footer  .icon .fa{padding: 5px;}
@@ -160,7 +205,7 @@ footer  .icon .fa{padding: 5px;}
     background:rgba(37, 27, 65, 0.39);
     width: 100%;
      display: inline-block;
-    min-height: 600px;
+    min-height: 400px;
     padding: 10px 0px;
 } 
 .body-home .background-section .relativ{position:relative}
@@ -218,15 +263,23 @@ footer  .icon .fa{padding: 5px;}
 }
 /* //////////////////////////////////////////////////////////////////// */
 /* start page sound */
-.video{width: 100%;padding: 10px;border-radius: 50px;    }
+.video{width: 100%;
+    padding: 10px;
+    border-radius: 24px;
+   }
+   .video:hover{
+    transform: scale(1.1);
+    transition: 1s;
+   }
 .ad-v {
     text-align: center;
     margin: 0 10px;
     border: 2px solid #797979;
-    border-radius: 15px ;
     padding: 5px;
     background: rgba(1,3,10,.9);
     /* max-height: 80px; */
+    position: relative;
+    z-index: 5;
     overflow: auto;
     line-height: 1.4;
 }
@@ -261,6 +314,10 @@ audio {width: 100%;height: 58px;;padding: 0px 20px;}
     opacity: .8;
     font-size: 20px;
 }
+.article-page .card{
+    background: #e3dcffe8;
+};
+
     /* end style page articl */
 /* start style page pomes */
 .poems-page .card-body {
@@ -269,24 +326,72 @@ audio {width: 100%;height: 58px;;padding: 0px 20px;}
         font-size: 20px;
         direction: rtl;
         text-align: right;
+        background: #1515340d;
+        
 }
 .poems-page  .card-body  h5{text-align: center;}
-.poems-page  .card{margin: 10px 0;}
+.poems-page  .card{
+    border-radius: 200px 200px 0px 0px;
+    background-image: linear-gradient(#e4e1ff, #8797be,#524f7b, #fff);
+}
 .poems-page .comment{ text-align: right; }
 .poems{
-      background: url("../image/BG-phone.png")no-repeat center center;
-      background-size: cover;
       padding: 25px 0px;
-    }
+      background-color: #1e1f5b26;
+        }
 .poems .card-body{text-align: center;line-height: 2;}
 .poems .item{ padding: 3px; }
 .poems .card .card-text{
     max-height: 8em;
     overflow: hidden;
 }
+ .more-btn {
+    width: 25%;
+    height: 47px;
+    margin-top: 20px;
+}
+ @media (min-width: 576px) and (max-width:1024px){
+    .poems .container {
+        max-width: 90%;
+
+    }
+ }
+
+.poems .card{
+    border-radius: 100px 0px 100px 0px;
+    text-align: center;
+    background-image: linear-gradient(#060336,#8a8bc2,#000e3c);
+    color: #eee;
+}
+
 .poems .icon{ text-align: center; }
     .poems .icon .fa{  padding: 10px; }
-    
+    .poems-page  .poems-card {
+        border-radius: 100px 0px 100px 0px;
+        text-align: center;
+        background-image: linear-gradient(#060336,#8a8bc2,#000e3c);
+        color: #eee;
+        box-shadow: 1px 1px 20px 1px #000;
+        margin: 15px 2px;
+    }
+    .multiple-items .item .card{
+        margin: 10px;
+        box-shadow: 1px 1px 13px 1px #000;
+    }
+    /* /////////////////////////////////////////////////////// */
+    .poems-page .poems-card .card-body{
+        color: #eee;
+    }
+    .poems-page  .poems-card button
+    {
+        margin: auto;
+        display: block;
+    }
+    .poems-page  .poems-card h5{
+        font-weight: 900;
+        color: #eee;
+    }
+ 
     /* end style page pomes */
     /* start style loading */
 .spinner { margin: 100px auto 0; width: 70px; text-align: center; }
@@ -323,3 +428,31 @@ audio {width: 100%;height: 58px;;padding: 0px 20px;}
         z-index: 333;
         right: 0;}
             /* end style loading//////////// */
+.style-p{
+    background-color: #fdfdfd;
+    padding: 20px 112px;
+    border-radius: 100px ;
+    width: 80%;
+    margin: auto;
+    box-shadow: inset 1px 0px 20px 1px #000;
+    color: #555;
+    line-height: 2;
+    font-size: 17px;
+    font-weight: bolder;
+}
+@media (max-width:980px){
+    .style-p {
+        padding: 25px 20px;
+        border-radius: 100px 100px 0px 0px;
+        width: 100%;
+  }
+}
+.multiple-items .bu-style, .article-page .bu-style{
+    box-shadow: none;
+}
+.poems-page .card-body h5 {
+    text-align: center;
+    color: #b91f1f;
+    font-size: 30px;
+    padding: 21px;
+}
