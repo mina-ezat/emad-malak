@@ -7,11 +7,14 @@ html, body{
 }
 body{
     font-family: 'Cairo', sans-serif;
-
+    display: flex;
+    flex-direction: column;
+}
+.footer-bottom{
+    flex:1 0 auto;
 }
 a {
     color: #fff;
-
 }
 
 /* .card {
@@ -190,7 +193,7 @@ header .top-page{
     clear: both;
 }
 
-footer{background-color: #123;color: #fff;line-height: 2; }
+footer{background-color: #123;color: #fff;line-height: 2; flex-shrink: 0; }
  footer .footer-end {padding: 10px 0px;color:#fff;direction: rtl;}
 footer .footer-end .icon , .icon{padding: 20px;}
 footer  .icon .fa{padding: 5px;}
@@ -454,5 +457,4 @@ audio {width: 100%;height: 58px;;padding: 0px 20px;}
     text-align: center;
     color: #b91f1f;
     font-size: 30px;
-    padding: 21px;
 }

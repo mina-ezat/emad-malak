@@ -1,19 +1,22 @@
  $('.single-item').slick({
       dots: true,
       infinite: true,
-      speed: 1000,
+      speed: 2000,
       slidesToShow: 1,
         arrows: false,
       adaptiveHeight: true,
        autoplay: true,
-       autoplaySpeed: 3000
+       autoplaySpeed: 4000
     });
     $('.multiple-items').slick({
       infinite: true,
       slidesToShow: 3,
+      autoplay: true,
+      speed: 1500,
       slidesToScroll: 3, 
        nextArrow: '.next',
       prevArrow: '.prev',
+      autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 1024,
@@ -46,9 +49,12 @@
     $('.multiple-item').slick({
       infinite: true,
       slidesToShow: 3,
+      autoplay: true,
+      speed: 1500,
       slidesToScroll: 3, 
        nextArrow: '.next-2',
       prevArrow: '.prev-2',
+      autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 1024,
