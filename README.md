@@ -17,5 +17,4 @@ You are only required to upload the project and open the index.html page and the
 
 
 ## Authors
-
-* **mina ezat ** - *front end* - [Initial work](https://github.com/mina-ezat/)
+* **mina ezat** - *front end* - [Initial work](https://github.com/mina-ezat/)
