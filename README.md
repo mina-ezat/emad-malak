@@ -12,7 +12,7 @@ You are only required to upload the project and open the index.html page and the
 * html
 * css
 * bootstrap 4
-* query
+* jquery
 * slick
 
 
