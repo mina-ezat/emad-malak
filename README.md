@@ -11,9 +11,9 @@ You are only required to upload the project and open the index.html page and the
 * javascript
 * html
 * css
-*bootstrap 4
-*query
-*slick
+* bootstrap 4
+* query
+* slick
 
 
 ## Authors
